@@ -95,16 +95,10 @@
 
   <div class="content">
     <h2>Online Bookings</h2>
-    <iframe
-      src='https://acme.cyan-helicopter-zds0hdq8ps-dev.com/online-booking/521e7ba5-c4e5-407c-8147-00181d452877'
-      name="onlineBookingEmbeded"
-      scrolling="auto"
-      width="100%"
-      height="700px"
-      loading="lazy"
-      frameBorder="0"
-      style="border: 3px solid #000;"
-    ></iframe>
+    <iframe id="splose-booking" src='https://acme.cyan-helicopter-zds0hdq8ps-dev.com/online-booking/521e7ba5-c4e5-407c-8147-00181d452877' name="onlineBookingEmbeded" scrolling="no" width="100%" height="700" loading="lazy" frameBorder="0" style="display:block;"></iframe>
+<script>
+window.addEventListener('message',function(e){if(e.data&&e.data.type==='sploseIframeResize'){var f=document.getElementById('splose-booking');if(f)f.style.height=e.data.height+'px';}});
+</script>
   </div>
 
   <footer class="footer">
