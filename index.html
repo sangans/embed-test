@@ -1,23 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking - PhysioXtra</title>
   <style>
-    body { margin: 0; background: #f5f5f5; font-family: sans-serif; }
-    header { background: #fff; padding: 16px; border-bottom: 1px solid #ddd; }
-    .content { padding: 20px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Roboto, Arial, sans-serif; background: #fafafc; }
+
+    /* Top header */
+    .header {
+      background: linear-gradient(0deg, rgba(2,33,102,1) 0%, rgba(0,82,212,1) 100%);
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header img { height: 60px; }
+    .header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .header nav a:hover { color: #fec524; }
+
+    /* Page title bar */
+    .page-title {
+      background: linear-gradient(0deg, rgba(2,33,102,1) 0%, rgba(0,82,212,1) 100%);
+      padding: 60px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .page-title h1 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+    .content h2 {
+      font-size: 22px;
+      color: #021366;
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    .footer {
+      background: linear-gradient(0deg, rgba(2,33,102,1) 0%, rgba(0,82,212,1) 100%);
+      padding: 40px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer h4 { color: #fec524; margin-bottom: 10px; font-size: 14px; letter-spacing: 1px; }
+    .footer p, .footer a { color: #fff; font-size: 14px; text-decoration: none; display: block; margin-bottom: 4px; }
+    .footer a:hover { color: #fec524; }
+    .footer-bottom {
+      background: rgba(2,33,102,1);
+      text-align: center;
+      padding: 14px;
+      color: rgba(255,255,255,0.6);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <header>Test Practice Website</header>
-  <div class="content">
-    <h2>Book an appointment</h2>
-    <iframe src='https://acme.cyan-helicopter-zds0hdq8ps-dev.com/online-booking/521e7ba5-c4e5-407c-8147-00181d452877' name="onlineBookingEmbeded" scrolling="auto"
-                    width="100%"
-                    height="700px"
-                    loading="lazy"
-                    frameBorder="0"
-                    ></iframe>
+
+  <header class="header">
+    <img src="https://www.physioxtra.com/wp-content/uploads/2021/05/PX_222x95.png" alt="PhysioXtra">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Locations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="page-title">
+    <h1>Book an Appointment</h1>
   </div>
+
+  <div class="content">
+    <h2>Online Bookings</h2>
+    <iframe
+      src='https://acme.cyan-helicopter-zds0hdq8ps-dev.com/online-booking/521e7ba5-c4e5-407c-8147-00181d452877'
+      name="onlineBookingEmbeded"
+      scrolling="auto"
+      width="100%"
+      height="700px"
+      loading="lazy"
+      frameBorder="0"
+    ></iframe>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <img src="https://www.physioxtra.com/wp-content/uploads/2021/05/PX_222x95.png" alt="PhysioXtra" style="height:50px; margin-bottom:12px;">
+      <p>Your local physio specialists</p>
+    </div>
+    <div>
+      <h4>LOCATIONS</h4>
+      <a href="#">Hallett Cove</a>
+      <a href="#">Marion</a>
+      <a href="#">Norwood</a>
+      <a href="#">Seaford</a>
+    </div>
+    <div>
+      <h4>CONTACT</h4>
+      <p>Phone: (08) 8000 0000</p>
+      <p>Email: info@physioxtra.com</p>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    © 2026 PhysioXtra. All rights reserved.
+  </div>
+
 </body>
 </html>
